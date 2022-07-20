@@ -1,0 +1,4 @@
+#sep and end parameters in print statement
+
+print("Royal", "Titan",sep='-',end='\n')
+print("Hello")
