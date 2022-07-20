@@ -1,0 +1,10 @@
+#sep is a parameter in python print statement
+#The sep parameter is mostly utilized to format strings and add a separator between strings that must be printed on the console.
+#The default value for sep is 'whitespace'
+#This feature was newly introduced in Python 3.x version
+
+print("Royal", "Titan", sep='-') 
+#Output: Royal-Titan
+
+print("Royal", "Titan", sep=' - ')
+#Output: Royal - Titan
