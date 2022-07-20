@@ -1,0 +1,4 @@
+#In the Python print statement, the end option is used to append any string to the output's end.
+
+print("Royal",end='\n')
+print("Titan")
