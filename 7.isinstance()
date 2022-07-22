@@ -1,0 +1,4 @@
+# To determine whether an object belongs to a given class, the isinstance() function is used.
+a = 8+0.3j
+print("The type of a", type(a))  
+print(" a is a complex number:", isinstance(8+0.3j,complex)) 
