@@ -1,0 +1,12 @@
+# Checking Variable Scope
+a = 'Global a'
+
+def check():
+    #global a
+    b = 'Local b'
+    a = 'Local a'
+    print(a +', '+ b) #prints 'Local a' and  'Local b'
+
+if __name__ == '__main__':
+    check()
+    print(a) #prints 'Global a'
