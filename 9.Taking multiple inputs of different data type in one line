@@ -1,0 +1,4 @@
+#Taking multiple inputs of different data type in one line
+score, name = (int(input("Enter Score: ")), input("Enter Name: "))
+print(score) 
+print(name)
