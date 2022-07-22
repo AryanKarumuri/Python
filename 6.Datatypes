@@ -1,0 +1,9 @@
+#The type() method in Python returns the type of the supplied variable.
+a=3  
+b="People"  
+c = 3.0 
+d = 2+3j  
+print(type(a))  #prints <class 'int'>
+print(type(b))  #prints <class 'str'>
+print(type(c))  #prints <class 'float'>
+print(type(d))  #prints <class 'complex'>
