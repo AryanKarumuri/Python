@@ -1,0 +1,20 @@
+a = 5
+b = 3
+
+print(a==b) 
+#Output: False
+
+print(a>b)
+#Output: True
+
+print(a<b)
+#Output: False
+
+print(a>=b)
+#Output: True
+
+print(a<=b)
+#Output: False
+
+print(a!=b)
+#Output: True
