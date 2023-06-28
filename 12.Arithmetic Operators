@@ -1,0 +1,23 @@
+a = 3
+b = 5
+
+print("Addition:",a+b) 
+#Output: Addition: 8
+
+print("Subtraction:",a-b) 
+#Output: Subtraction: -2
+
+print("Multiplication:",a*b) 
+#Output: Multiplication: 15
+
+print("Division:",a/b) 
+#Output: Division: 0.6
+
+print("Reminder:",a%b) 
+#Output: Reminder: 3
+
+print("Exponent:",a**b) 
+#Output: Exponent: 243
+
+print("Floor Division:",a//b) 
+#Output: Floor Division: 0
