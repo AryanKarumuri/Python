@@ -1,0 +1,17 @@
+#Single line comments
+print("This line will be printed")
+#print("This line won't be printed")
+
+#Multi-line comments
+  #Method - 1
+#This is 
+#under 
+#multi-line comment
+#print("This line won't be printed")  
+  #Method - 2
+"""
+    This is 
+    under 
+    multi-line comment
+    print("This line won't be printed")
+"""
