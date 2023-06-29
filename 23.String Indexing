@@ -1,0 +1,16 @@
+#String Indexing
+
+name = "Sri Raj"
+
+print(type(name))
+#Output: <class 'str'>
+
+print(name)
+#Output: Sri Raj
+
+print(name[2])
+#Output: i
+
+print(name[3])
+#Output: 
+
