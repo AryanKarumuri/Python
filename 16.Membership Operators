@@ -1,0 +1,10 @@
+#Membership operators can be used to validate the membership of a value within a Python data structure. 
+#If the value is found in the data structure, the result is true; otherwise, it returns false.
+
+l = ["cat", "dog"]
+
+print("dog" in l)
+#Output: True
+
+print("cat" not in l)
+#Output: False
