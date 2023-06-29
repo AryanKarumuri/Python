@@ -1,0 +1,12 @@
+#Logical operators are commonly used in expression evaluation to make assessments.
+
+x = 6
+
+print(x>7 or x<8)
+#Output: True
+
+print(x>7 and x<8)
+#Output: False
+
+print(not(x>7 and x<8))
+#Output: True
