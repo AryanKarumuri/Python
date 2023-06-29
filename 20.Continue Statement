@@ -1,0 +1,10 @@
+#"continue" keyword return control of the iteration to the beginning of the for or while loops.
+
+l = [1, 2, 4, 5, 8]
+
+for i in l:
+    if i == 5:      #if i is equals to 5, loop will continue to the next iteration 
+        continue
+    print(i," ",end="")
+
+#Output: 1 2 4 8
