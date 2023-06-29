@@ -6,3 +6,5 @@ for i in l:
     if i == 5:   #breaks the loop when the condition comes true
         break    
     print(i," ",end="")
+
+#Output: 1 2 4
