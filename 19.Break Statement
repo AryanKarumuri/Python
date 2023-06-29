@@ -1,0 +1,8 @@
+#Break keyword is used to bring the program control out of the loop.
+
+l = [1, 2, 4, 5, 8]
+
+for i in l:
+    if i == 5:   #breaks the loop when the condition comes true
+        break    
+    print(i," ",end="")
