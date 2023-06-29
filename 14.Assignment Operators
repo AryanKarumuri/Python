@@ -1,0 +1,10 @@
+#The right expression's value is assigned to the left operand using the assignment operators.
+
+a = 4
+b = 7
+
+a += b
+print(a)
+#Output: 11
+
+#Similarly "-=", "*=", "%=", "**=", "//=" are also assignment operators.
