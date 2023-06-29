@@ -1,0 +1,17 @@
+#Identity operators are used to compare things not to see whether they are equal, but to see if they are the same object with the same memory address.
+
+a = ["boy", "girl"]
+b = ["boy", "girl"]
+c = a
+
+print(a is c)
+#Output: True #because c is same object as a
+
+print(a is b)
+#Output: False #because b isn't same object as a
+
+print(a is not b)
+#Output: True #because b isn't same object as a
+
+print(a==c)
+#Output: True #because x is equal to y
