@@ -1,0 +1,11 @@
+# It is placeholder for the future execution of loops, functions, classes, etc.,
+
+l = [1, 2, 4, 5, 8]
+
+for i in l:
+    if i == 5:
+        pass    #leaving an empty
+    else:
+        print(i," ",end="")
+
+#Output: 1  2  4  8
