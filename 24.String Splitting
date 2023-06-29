@@ -1,0 +1,24 @@
+#String Splitting
+
+name = "Sri Raj"
+
+print(name[:])
+#Output: Sri Raj
+
+print(name[0:])
+#Output: Sri Raj
+
+print(name[:len(name)])
+#Output: Sri Raj
+
+print(name[2:])
+#Output: i Raj
+
+print(name[1:5])
+#Output: ri R
+
+print(name[0:7:2])   #[start:stop:step]
+#Output: SiRj
+
+print(name[::-1])    #Reversing a string   
+#Output: jaR irS
