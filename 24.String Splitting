@@ -20,5 +20,8 @@ print(name[1:5])
 print(name[0:7:2])   #[start:stop:step]
 #Output: SiRj
 
+print(name[-7:-2])
+#Output: Sri R
+
 print(name[::-1])    #Reversing a string   
 #Output: jaR irS
