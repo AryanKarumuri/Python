@@ -38,3 +38,7 @@ w = []  #Empty list
 w.append(max(d))
 print(w)
 #Output: [99.087]
+
+w.remove(99.087)    #Removing an element from a list
+print(w)
+#Output: []
