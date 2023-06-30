@@ -1,0 +1,40 @@
+#Lists are mutable where elements can be modified after they has been formed.
+
+l = [1, "Sri", 9.087, 'c', "Ram"]
+
+print(type(l))
+#Output: <class 'list'>
+
+print(l[3])
+#Output: c
+
+print(len(l))   #Length of a list
+#Output: 5
+
+print("Name1: "+l[1]+" and Name2: "+l[4])
+#Output: Name1: Sri and Name2: Ram 
+
+print("Name1: %s and Name2: %s "%(l[1],l[4]))
+#Output: Name1: Sri and Name2: Ram 
+
+print(l*2) #list elements will be repeated 2 times
+#Output: [1, 'Sri', 9.087, 'c', 'Ram', 1, 'Sri', 9.087, 'c', 'Ram']
+
+print(9.87 in l) #Checking the membership
+#Output: False
+
+s = [2, "Batman"]
+print(l+s)  #List concatenation
+#Output: [1, 'Sri', 9.087, 'c', 'Ram', 2, 'Batman']
+
+d = [1, 54, 26, 98, 99.087]
+print(max(d))
+#Output: 99.087
+
+print(min(d))
+#Output: 1
+
+w = []  #Empty list
+w.append(max(d))
+print(w)
+#Output: [99.087]
