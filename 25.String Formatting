@@ -1,0 +1,11 @@
+#print("Thanos said, "I'm inevitable."")
+#Gives error (SyntaxError: unterminated string literal)
+
+print("Thanos said, \"I'm inevitable.\"") #Using double quotes
+#Output: Thanos said, "I'm inevitable."
+
+print('''Thanos said, "I'm inevitable."''') #Using triple quotes
+#Output: Thanos said, "I'm inevitable."
+
+print('Thanos said, "I\'m inevitable."') #Using single quotes
+#Output: Thanos said, "I'm inevitable."
