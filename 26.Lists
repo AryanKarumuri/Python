@@ -11,21 +11,31 @@ print(l[3])
 print(len(l))   #Length of a list
 #Output: 5
 
+print(l.count('c')) 
+#Output: 1
+
+print(l.index('c'))  #Find ritem's index
+#Output: 3
+
 print("Name1: "+l[1]+" and Name2: "+l[4])
 #Output: Name1: Sri and Name2: Ram 
 
 print("Name1: %s and Name2: %s "%(l[1],l[4]))
 #Output: Name1: Sri and Name2: Ram 
 
-print(l*2) #list elements will be repeated 2 times
+print(l*2)   #list elements will be repeated 2 times
 #Output: [1, 'Sri', 9.087, 'c', 'Ram', 1, 'Sri', 9.087, 'c', 'Ram']
 
-print(9.87 in l) #Checking the membership
+print(9.87 in l)   #Checking the membership
 #Output: False
 
 s = [2, "Batman"]
-print(l+s)  #List concatenation
+print(l+s)    #List concatenation
 #Output: [1, 'Sri', 9.087, 'c', 'Ram', 2, 'Batman']
+
+s.clear()  #Clearing out a list
+print(s)
+#Output: []
 
 d = [1, 54, 26, 98, 99.087]
 print(max(d))
