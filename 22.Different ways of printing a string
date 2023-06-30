@@ -19,6 +19,9 @@ print("The String str is {}" .format(str))
 print("The Strings are {0} and {1}" .format(str, "Lion"))
 #Output: The String are Hello and Lion
 
+print("The Strings are {a} and {b}".format(a=str, b=str1))
+#Output: The String str and str1 are Hello and Tiger
+
 print("The Strings str and str1 are "+str+" and "+str1)
 #Output: The String str and str1 are Hello and Tiger
 
