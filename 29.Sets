@@ -1,0 +1,39 @@
+#A set is a collection of unordered and unique values. It has no specific order. 
+#One can't change the items of a set, but you can add to the set and remove from it.
+
+s = {2.8, 67, 1, 8.0098}
+
+print(type(s))
+#Output: <class 'set'>
+
+#length of a set
+print(len(s))
+#Output: 4
+
+#Adding a single item
+s.add(11.23)        
+print(s)
+#Output: {1, 2.8, 67, 8.0098, 11.23}
+
+#Adding multiple items
+s.update([23, 56])
+print(s)
+#Output: {1, 2.8, 67, 8.0098, 11.23, 23, 56}
+
+#Checking membership
+print(11.23 in s)
+#Output: True
+
+#Removing an item
+d.remove(11.23)
+print(d)
+#Output: {1, 2.8, 67, 23, 8.0098, 56}
+
+#Copying a set
+d = s.copy()
+print(d)
+#Output: {1, 2.8, 67, 23, 8.0098, 56, 11.23}
+
+'''
+Since set has no definite order, items may not be in same order as the orginal set.
+'''
