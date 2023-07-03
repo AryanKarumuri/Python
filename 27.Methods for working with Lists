@@ -1,0 +1,51 @@
+#Lists are mutable where elements can be modified after they has been formed.
+
+l = [1, "Sri", 9.087, 'c', "Ram"]
+
+print(type(l))
+#Output: <class 'list'>
+
+l.append(1)             #Adding an element at end of the list
+print(l)
+#Output: [1, 'Sri', 9.087, 'c', 'Ram', 1]
+
+l.insert(3, 10.768)     #insert(position, item)
+print(l)
+#Output: [1, 'Sri', 9.087, 10.768, 'c', 'Ram', 1]
+
+print(l.count("Ram"))    #Count the number of occurence of an item
+#Output: 1
+
+print(l.index(9.087))    #Gives the index position of an item
+#Output: 2
+
+print(l.pop(1))          #pop(index)
+#Output: Sri
+
+print(l.pop())           #removes last item
+#Output: 1
+
+l.remove('c')            #removes the letter 'c' in the list
+print(l)
+#Output: [1, 9.087, 10.768, 'Ram']
+
+l.reverse()              #Reversing a list
+print(l)
+#Output: ['Ram', 10.768, 9.087, 1]
+
+s = l.copy()             #Make a copy of the list
+print(s)
+#Output: ['Ram', 10.768, 9.087, 1]
+
+del s[2]                 #To delete single value
+print(s)
+#Output: ['Ram', 10.768, 1]
+
+del s                    #To delete whole list
+
+'''
+Note: 
+The pop() method deletes the final element or the element specified by the index. 
+The remove() method deletes the first instance of the provided element.
+The del keyword delete any variable, list of values from a list.
+'''
