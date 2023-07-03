@@ -24,16 +24,15 @@ print(s)
 print(11.23 in s)
 #Output: True
 
-#Removing an item
-d.remove(11.23)
-print(d)
-#Output: {1, 2.8, 67, 23, 8.0098, 56}
-
 #Copying a set
 d = s.copy()
 print(d)
 #Output: {1, 2.8, 67, 23, 8.0098, 56, 11.23}
 
+#Removing an item
+d.remove(11.23)
+print(d)
+#Output: {1, 2.8, 67, 23, 8.0098, 56}
 '''
 Since set has no definite order, items may not be in same order as the orginal set.
 '''
