@@ -1,0 +1,31 @@
+#Tuples are an immutable data type, which means that once they have been generated, their elements cannot be changed.
+
+t = ()
+print(type(t))
+#Output: <class 'tuple'>
+
+t1 = "Thor"
+print(type(t1))
+#Output: <class 'str'>
+
+t2 = "Thor", 
+print(type(t2))
+#Output: <class 'tuple'>
+
+t3 = (23.97, 45, 8.009, 7, 45)
+
+print(len(t3))          #Prints length of the tuple
+#Output: 5
+
+print(t3.count(45))     #Prints the number of occurence of an item
+
+print(8.009 in t3)      #Checking the membership
+#Output: True
+
+print(t3.index(7))      #Prints the index position of an item
+#Output: 3
+
+'''
+Any of the methods that alter data or just copy data from a list cause an error when you try them with tuples.
+That includes methods like append(), clear(), copy(), pop(), extend(), insert(), remove(), reverse(), sort()
+'''
