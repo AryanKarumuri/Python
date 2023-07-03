@@ -1,0 +1,46 @@
+import math
+x = -8
+
+print(abs(x))   #Converts negative number to positive
+#Output: 8
+
+print(bin(x))   #Value of x converted to binary
+#Output: -0b1000
+
+print(hex(x))   #Value of x converted to hexadecimal
+#Output: -0x8
+
+print(oct(x))   #Value of x converted to octal 
+#Output: -0o10
+
+print(float(x)) #Converts to float datatype
+#Output: -8.0
+
+print(type(str(x)))   #Converts to string datatype
+#Output: <class 'str'>
+
+print(type(int(x)))   #Converts to int datatype
+#Output: <class 'int'>
+
+y = 8.9076
+
+print(round(y, 2))
+#Output: 8.91
+
+print(math.floor(y))
+#Output: 8
+
+print(math.ceil(y))
+#Output: 9
+
+print(math.sqrt(math.ceil(y)))
+#Output: 3.0
+
+print(math.isnan(y))
+#Output: False
+
+print(math.factorial(3))
+#Output: 6
+
+print(math.pow(2, 3))
+#Output: 8.0
