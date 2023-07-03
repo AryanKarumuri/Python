@@ -43,6 +43,10 @@ print(s)
 
 del s                    #To delete whole list
 
+l.clear()                #Removes all the elements from the list
+print(l)
+#Output: []
+
 '''
 Note: 
 The pop() method deletes the final element or the element specified by the index. 
