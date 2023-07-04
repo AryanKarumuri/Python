@@ -1,0 +1,72 @@
+d = { 'Name': 'Thanos',
+        'Dialogue': "I'm inevitable",
+        'Power': 'destruction',
+        'Killed': 'Many',
+        'Number' : 4
+    }
+    
+print(type(d))
+#Output: <class 'dict'>
+
+print(d['Dialogue'])
+#Output: I'm inevitable
+
+print(d['Number'])
+#Output: 4
+
+d[len(d)+1] = 'Ironman'
+print(d)
+#Output: {'Name': 'Thanos', 'Dialogue': "I'm inevitable", 'Power': 'destruction', 'Killed': 'Many', 'Number': 4, 6: 'Ironman'}
+
+d[6] = 'Batman'
+print(d[6])
+#Output: Batman
+
+#Dictionary methods
+
+print(len(d))       #Length of the dictionary
+#Output: 6
+
+print(any({':','2:'}))
+#Output: True
+
+d1 = { 2: "Batman",
+        3: "Superman",
+        1: "Wonderwomen"
+    }
+    
+print(sorted(d1))
+#Output: [1, 2, 3]
+
+print(d1.items())       #Returns key-value pair as a tuple
+#Output: dict_items([(2, 'Batman'), (3, 'Superman'), (1, 'Wonderwomen')])
+
+print(d1.keys())        #Returns list of all keys in a dictionary
+#Output: dict_keys([2, 3, 1])
+
+print(d1.values())      #Returns list of all values in a dictionary
+#Output: dict_values(['Batman', 'Superman', 'Wonderwomen'])
+
+print(d1.get(3))        #Returns value of specific key
+#Output: Superman
+
+d1.update({3: 'Aquaman'})               #Updates the value of existing key or adds a new key-value pair if key doesn't exists
+print(d1.get(3))
+#Output: Aquaman
+
+print(d1.setdefault(2, "Dr.Strange"))   #Gives the value of specified key
+#Output: Batman
+
+d1.setdefault(4, "Falsh")               #If key doesn't exists, insert the key with specified value
+print(d1)
+#Output: {2: 'Batman', 3: 'Aquaman', 1: 'Wonderwomen', 4: 'Falsh'}
+
+print(d1.popitem())                     #Removes last key-value pair
+#Output: (4, 'Falsh')
+
+c = d1.pop(1)                           #Removes the item specified by the key
+print(c)
+#Output: Wonderwomen
+
+print(d1)
+#Output: {2: 'Batman', 3: 'Aquaman'}
