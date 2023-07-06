@@ -1,0 +1,30 @@
+#Nested Dictionaries
+d = {
+    'we1' : {'name':'a', 'age':'23', 'hobbies':[]},
+    'we2' : {'name':'b', 'age':'25', 'hobbies':['sleeping', 'eating']},
+    'we3' : {'name':'c', 'age':'22', 'hobbies':["reading"]}
+}
+
+#To display the data from dictionaries in tabular format
+print(f"{'ID': <6} {'Name': <8} {'Age': <8} {'Hobbies': >8}")
+
+for i in d.keys():
+    pd = i
+    Name = d[i]['name']
+    Age = d[i]['age']
+    hobby = ''
+    for j in d[i]['hobbies']:
+        hobby += j + ','
+    if len(hobby) >1 :
+        hobby = hobby[:-1]
+    else:
+        hobby="None"
+    print(f"{pd: <6} {Name: <8} {Age: <8} {hobby: >8}")
+    
+'''
+ID     Name     Age       Hobbies
+we1    a        23           None
+we2    b        25       sleeping,eating
+we3    c        22        reading
+'''  
+    
