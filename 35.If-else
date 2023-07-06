@@ -1,0 +1,12 @@
+B = "True"
+
+if B == "true":
+    print("if loop")
+    print(f"The boolean value is {B}")
+else:
+    print("else loop")
+    print(f"The boolean value is {B}")
+    
+#Output: 
+#else loop
+#The boolean value is True
