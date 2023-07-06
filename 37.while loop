@@ -1,0 +1,18 @@
+c = 65
+
+while c<72:
+    print(str(c)+" = "+chr(c)) #chr() displays the ASCII value of number
+    c += 1
+print("Out of loop")
+
+#Output:
+'''
+65 = A
+66 = B
+67 = C
+68 = D
+69 = E
+70 = F
+71 = G
+Out of loop
+'''
