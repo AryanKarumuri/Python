@@ -1,3 +1,5 @@
 x = 3
 if x==3:
     print(f"The value of x is {x}")
+
+#Output: The value of x is 3
