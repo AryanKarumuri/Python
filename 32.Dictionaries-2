@@ -1,0 +1,22 @@
+#fromkeys() method creates a dictionary from the given sequence of keys and values.
+
+d = {
+    'c', 'b'
+}
+
+i = 3
+
+d1 = dict.fromkeys(d, i)    #new_dictionary_name = dict.fromkeys(iterable, value)
+print(d1)
+#Output: {'c': 3, 'b': 3}
+
+g = [2, 5, 6]
+
+d2 = dict.fromkeys(d, g)
+print(d2)
+#Output: {'c': [2, 5, 6], 'b': [2, 5, 6]}
+
+d2.setdefault('b', [2, 5, 4])   #the value of key "b" won't change since it has already existing value
+d2.setdefault('a', [2, 5, 7])   #key doesn't exists so key will be inserted with specified value
+print(d2)
+#Output: {'b': [2, 5, 6], 'c': [2, 5, 6], 'a': [2, 5, 7]}
