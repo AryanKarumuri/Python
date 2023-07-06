@@ -1,0 +1,16 @@
+age = 15
+
+if age < 16:
+    #if age under 16, go to school
+    caption = "going to school"
+    
+elif age >= 16 and age < 23:
+    #age between 16-23, go to college
+    caption = "going to college"
+
+else:
+    caption = "doing a job"
+    
+print("I'm "+caption)
+
+#Output: I'm going to school
