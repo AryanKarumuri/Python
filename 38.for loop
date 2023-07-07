@@ -1,0 +1,68 @@
+#List
+l = [1, 3, 5, 7, 8]     
+    
+for i in range(5):                  #range(end)
+    print("Index = ",i)
+    print(l[i])
+print("End of first for loop\n")
+
+'''
+Output:
+Index =  0
+1
+Index =  1
+3
+Index =  2
+5
+Index =  3
+7
+Index =  4
+8
+End of first for loop
+'''
+    
+for i in range(0, 5, 2):            #range(start, end, step)
+    print("Index = ",i)
+    print(l[i])
+print("End of second for loop\n")
+
+'''
+Output:
+Index =  0
+1
+Index =  2
+5
+Index =  4
+8
+End of second for loop
+'''
+
+for i in range(0, 3):               #range(start, end)
+    print("Index = ",i)
+    print(l[i])
+print("End of third for loop\n")
+
+'''
+Output:
+Index =  0
+1
+Index =  1
+3
+Index =  2
+5
+End of third for loop
+'''
+
+for i in l:                         #for i in <list>, <tuple>, <string>, <dictionary>:
+    print(i)
+print("End of fourth for loop\n")
+
+'''
+Output:
+1
+3
+5
+7
+8
+End of fourth for loop
+'''
