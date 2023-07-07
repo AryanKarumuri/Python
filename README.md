@@ -1,2 +1,2 @@
 # Python
-It includes basic to advance codes
+Sample code examples can be found in this repository.  
