@@ -1,0 +1,19 @@
+import random
+#Function declaration
+def display(name, quote):
+    print(f"Hello {name}, welcome to my Github repository..")
+    print(quote)
+
+name = input("Enter your name: ")
+quotes = ['Have a nice day!!', 'Enjoy your learning path^_^', 'Happy learning']
+quote = random.choice(quotes)
+
+#Function call
+display(name, quote)
+
+"""
+#Output:
+Enter your name: Spiderman
+Hello Spiderman, welcome to my Github repository..
+Enjoy your learning path^_^
+""" 
