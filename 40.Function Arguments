@@ -1,0 +1,33 @@
+import random
+def display(name, quote):
+    print(f"Hello {name}, welcome to my Github repository..")
+    print(quote)
+
+name = input("Enter your name: ")
+quotes = ['Have a nice day!!', 'Enjoy your learning path^_^', 'Happy learning']
+quote = random.choice(quotes)
+
+#Positional arguments
+display(name, quote)
+"""
+#Output:
+Enter your name: Aryan
+Hello Aryan, welcome to my Github repository..
+Have a nice day!!
+"""
+
+display(quote, name)
+"""
+#Output:
+Hello Have a nice day!!, welcome to my Github repository..
+Aryan
+"""
+#Keyword arguments
+display(quote="Have a nice day!", name="Superman")
+
+"""
+#Output:
+Hello Superman, welcome to my Github repository..
+Have a nice day!
+"""
+    
