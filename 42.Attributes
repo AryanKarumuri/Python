@@ -1,0 +1,31 @@
+class Member: 
+    def __init__(self, uname, fname):
+        self.username = uname
+        self.fullname = fname
+
+#instance of class Member named obj
+obj = Member("Spiderman", "Superman")
+
+#individual properties of the instance
+print(obj.username)
+print(obj.fullname)
+print(type(obj))
+
+#changing the values of an attribute
+obj.uname = "Hulk"
+print(obj.uname)
+
+obj.username = "Ironman"
+print(obj.username)
+"""
+Output: 
+Spiderman
+Superman
+<class '__main__.Member'>
+Hulk
+Ironman
+"""
+
+#Object and Property are synonymous with instance and attribute.
+#obj = instance of class Mamber can also be called as Object.
+#username and fuulname are attributes of obj are also called as properties of an object
