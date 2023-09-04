@@ -1,0 +1,23 @@
+class Member: 
+    def __init__(self, uname, fname):
+        self.username = uname
+        self.fullname = fname
+
+    #creating a method
+    def name(self):
+        return f"{self.username} and {self.fullname} are from different worlds"
+    
+    def lie(self, name):
+        #self.newname = name
+        return f"{self.username} is a {name}"
+    
+#instance of class Member named obj
+obj = Member("Spiderman", "Superman")
+
+#calling name method
+print(obj.name())
+#Output: Spiderman and Superman are from different worlds
+
+#Passing parameters to methods
+print(obj.lie("Panther"))
+#Ouput: Spiderman is a Panther
