@@ -1,0 +1,29 @@
+class User:
+    
+    def __init__(self, userid, username):
+        self.id = userid
+        self.name = username
+        self.followers = 0
+        self.following = 0
+    
+    def follows(self, user):
+        user.followers += 1
+        self.following += 1
+        
+user1 = User("01", "Ravan")
+user2 = User("02", "Ram")
+
+user1.follows(user2)
+
+print(user1.followers)          
+print(user1.following)
+print(user2.followers)
+print(user2.following)
+        
+"""
+Output:
+0
+1
+1
+0
+"""
