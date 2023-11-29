@@ -1,2 +1,2 @@
 # Python
-Sample code examples can be found in this repository.  
+Discover a variety of sample code examples within this repository.
