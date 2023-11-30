@@ -27,5 +27,5 @@ Ironman
 """
 
 #Object and Property are synonymous with instance and attribute.
-#obj = instance of class Mamber can also be called as Object.
-#username and fuulname are attributes of obj are also called as properties of an object
+#obj = instance of class Member can also be called as Object.
+#username and fullname are attributes of obj are also called as properties of an object
