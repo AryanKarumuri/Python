@@ -1,0 +1,33 @@
+#Decorators in Python provide a concise way to modify the behavior of functions, enabling developers to add reusable and transparent functionalities to their code without modifying the original function itself.
+#In other words, decorators are a powerful way to modify or enhance the behavior of functions or methods without changing their actual implementation. They allow you to wrap another function and add functionality before, after, or around the original function, extending its behavior dynamically.
+
+def func1(other_func):
+    print("Inside the func1")
+
+    def wrapper_func():
+        print("Inside the wrapper_func, before executing the other_func")
+        other_func()
+        print("Inside the wrapper_func, after executing the other_func")
+        
+    return wrapper_func
+    
+
+@func1  #decorator
+def other_func():
+    print("This function is in need of decorator")
+    
+other_func()
+
+"""
+Output:
+Inside the func1
+Inside the wrapper_func, before executing the other_func
+This function is in need of decorator
+Inside the wrapper_func, after executing the other_func
+"""
+"""
+Instead of giving this line "other_func = func1(other_func)", we can rewrite this code using the @ symbol, which is what Python uses for Decorators.
+Note: Observe the output by commenting or removing this "@func1".
+"""
+
+
