@@ -1,0 +1,38 @@
+#next() and iter() are built-in functions used for working with iterators and iterable objects.
+#The next() function is used to retrieve the next item from an iterator.
+#The iter() function is used to create an iterator object from an iterable. It takes an iterable (such as a list, tuple, string, etc.) as an argument and returns an iterator object.
+
+
+#Example for next():
+
+def generate():
+    for i in range(5):
+        yield i
+
+g = generate()
+print(next(g))  #Output: 0
+print(next(g))  #Output: 1
+print(next(g))  #Output: 2
+print(next(g))  #Output: 3
+print(next(g))  #Output: 4
+#print(next(g))  #Output: Error [After yielding all the values next() caused a StopIteration error]
+
+#Example for iter():
+
+s = "Hola!"
+
+#next(s) #Gives error
+#A string object supports iteration, but can't directly iterate over it as we could with a generator function. The iter() function allows us to do just that!
+
+si = iter(s)
+for i in range(len(s)):
+  print(next(si))
+ 
+"""
+Output:
+H
+o
+l
+a
+!
+"""
