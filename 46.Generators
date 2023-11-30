@@ -1,0 +1,36 @@
+#Generators in Python are special functions that enable the creation of iterators.
+#They generate a sequence of values lazily, meaning they produce values only when needed, thereby conserving memory and allowing the handling of large data sets efficiently.
+
+def generate_fabonacci(n):
+    a,b = 1,1
+    for i in range(n):
+        yield a    #It only cares about the previous result to generate the next one
+        a,b = b,a+b
+for i in generate_fabonacci(10):
+    print(i)
+
+"""
+Output:
+1
+1
+2
+3
+5
+8
+13
+21
+34
+55
+"""
+
+"""
+def generate_fabonacci(n):
+    a,b = 1,1
+    l = []
+    for i in range(n):
+        l.append(a)
+        a,b = b,a+b
+  return l
+
+If we use the above block of code , it should keep track of every single result.
+"""
