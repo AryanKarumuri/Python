@@ -2,7 +2,6 @@
 #The next() function is used to retrieve the next item from an iterator.
 #The iter() function is used to create an iterator object from an iterable. It takes an iterable (such as a list, tuple, string, etc.) as an argument and returns an iterator object.
 
-
 #Example for next():
 
 def generate():
