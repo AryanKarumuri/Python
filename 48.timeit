@@ -1,0 +1,20 @@
+#The timeit module in Python is a convenient way to measure the execution time of small code snippets.
+
+"""
+Syntax: timeit.timeit(stmt, setup, timer, number) 
+where
+stmt: The statement or code snippet that you want to measure (as a string).
+setup (optional): Code snippet that is executed once initially to set up the environment. It's not included in the measurement time. Defaults to "pass".
+timer (optional): A timer function. Defaults to timeit.default_timer().
+number (optional): The number of executions for which the code snippet will be run. 
+"""
+import timeit
+
+code_to_measure = """
+result = 0
+for i in range(1000):
+    result += i
+"""
+
+execution_time = timeit.timeit(code_to_measure, number=10000)
+print(f"Execution time: {execution_time} seconds")
