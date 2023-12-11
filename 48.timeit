@@ -8,6 +8,7 @@ setup (optional): Code snippet that is executed once initially to set up the env
 timer (optional): A timer function. Defaults to timeit.default_timer().
 number (optional): The number of executions for which the code snippet will be run. 
 """
+
 import timeit
 
 code_to_measure = """
