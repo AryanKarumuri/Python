@@ -1,0 +1,5 @@
+a, b = 10, 50
+
+print(f"Memory address of a is {id(a)}")
+print(f"Memory address of b is {id(b)}")
+
