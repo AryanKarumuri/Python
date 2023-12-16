@@ -1,0 +1,25 @@
+#Lambda function: An anonymous function or nameless function for a short period of time.
+
+numbers = [2, 5, 8, 98, 34]
+
+#'map' applies to a function to all items in an input_list
+
+squared_numbers = list(map(lambda x:x**2, numbers))
+print(squared_numbers)
+
+#Output: [4, 25, 64, 9604, 1156]
+
+#'filter' creates a list of elements for which a func. returns true
+
+two_divisible = list(filter(lambda x:x%2==0, numbers))
+print(two_divisible)
+
+#Output: [2, 8, 98, 34]
+
+#'reduce' is used for performing some computations and returning the result
+
+from functools import reduce
+product = reduce((lambda x,y:x*y), numbers)
+print(product)
+
+#Output: 266560
