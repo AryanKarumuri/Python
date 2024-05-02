@@ -1,0 +1,65 @@
+import torch
+import numpy as np
+import seaborn as sns
+
+# Create a tensor x with a scalar value 4.5
+x = torch.tensor(4.5)
+
+# Define y as the result of adding 10 to x
+y = x + 10
+
+# Print the value of y
+print(y)
+
+# Check if x requires gradient tracking
+print(x.requires_grad)
+
+# Create a tensor z with a scalar value 2.0 and enable gradient tracking
+z = torch.tensor(2.0, requires_grad=True)
+
+# Check if z requires gradient tracking
+print(z.requires_grad)
+
+# Define a function to compute a quadratic polynomial
+def func(val):
+    return (val - 3) * (val - 2) * (val - 4)
+
+# Generate a range of x values and compute y values using the function
+x_range = np.linspace(0, 10, 101)
+y_range = [func(i) for i in x_range]
+
+# Plot the function using seaborn
+sns.lineplot(x=x_range, y=y_range)
+
+# Redefine z with a tensor of value 5.0 and enable gradient tracking
+z = torch.tensor([5.0], requires_grad=True)
+
+# Compute y as the result of a polynomial expression involving z
+y = (z - 3) * (z - 2) * (z - 4)
+
+# Perform backpropagation to compute gradients
+y.backward()
+
+# Print the gradient of z
+print(z.grad)
+
+
+
+# Second Example
+# Define a more complex network with tensors and operations
+x11 = torch.tensor(2.0, requires_grad=True)
+x21 = torch.tensor(3.0, requires_grad=True)
+
+# Define intermediate variables using operations on x11 and x21
+x12 = 5 * x11 - 3 * x21
+x22 = 2 * x11 ** 2 + 2 * x21
+
+# Define y as a combination of x12 and x22
+y = 4 * x12 + 3 * x22
+
+# Perform backpropagation to compute gradients
+y.backward()
+
+# Print the gradients of x11 and x21
+print(x11.grad)
+print(x21.grad)
