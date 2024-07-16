@@ -1,0 +1,51 @@
+# -- Destructuring in for loops --
+
+hero_missions = {"Batman": 87, "Superman": 8, "Spiderman": 46}
+for hero, mission in hero_missions.items():
+    print(f"{hero}: {mission}")
+
+"""
+#Output:-
+Batman: 87
+Superman: 8
+Spiderman: 46
+"""
+
+
+# -- Another example --
+
+people = [("Batman", 42, "Mechanic"), ("Aquaman", 24, "Artist"), ("Captain", 32, "Lecturer")]
+for name, age, role in people:
+    print(f"Name: {name}, Age: {age}, Role: {role}")
+
+"""
+#Output:-
+Name: Batman, Age: 42, Role: Mechanic
+Name: Aquaman, Age: 24, Role: Artist
+Name: Captain, Age: 32, Role: Lecturer
+"""
+
+
+# -- Another way for the above one --
+for person in people:
+    print(f"Name: {person[0]}, Age: {person[1]}, Role: {person[2]}")
+
+
+# -- Ignoring values with underscore --
+
+person = ("Wonderwoman", 66, "Saviour")
+name, _, profession = person
+print(name, profession)  
+
+#Output: Wonderwoman Saviour
+
+
+# -- Collecting values --
+
+head, *tail = [1, 2, 3, 4, 5]
+print(head)  # 1
+print(tail)  # [2, 3, 4, 5]
+
+*head, tail = [1, 2, 3, 4, 5]
+print(head)  # [1, 2, 3, 4]
+print(tail)  # 5
