@@ -18,6 +18,7 @@ Easy-to-follow examples that show how to use Python libraries.
   - **NumPy**: Array operations and mathematical functions.
   - **Pandas**: Data manipulation and analysis.
   - **Matplotlib**: Data visualization through plotting.
+  - **NLP**: Basic NLP techniques.
 
 
 ## ✅ Ideal For
