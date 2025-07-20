@@ -20,6 +20,8 @@ Easy-to-follow examples that show how to use Python libraries.
   - **Matplotlib**: Data visualization through plotting.
   - **NLP**: Basic NLP techniques.
 
+### 🔺[`Python_Projects/`](https://github.com/AryanKarumuri/Python/tree/main/Python_Projects)
+A curated collection of Python-based projects demonstrating a variety of applications—from simple scripts to real-world tool integrations.
 
 ## ✅ Ideal For
 
